@@ -5,7 +5,7 @@ SYMBOLS = {'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, 'M':1000}
 def num2vec(num):
     vec = [0] * VECSIZE
     for i in range(len(num)):
-        vec[VECSIZE - 1 -i] = SYMBOLS[num[i]]
+        vec[i] = SYMBOLS[num[i]]
     return vec
 
 
